@@ -1,0 +1,32 @@
+[
+  {
+    "title": "韩系宽松连衣裙2026新款",
+    "price": 89,
+    "image": "https://example.com/1.jpg",
+    "category": "女装"
+  },
+  {
+    "title": "通勤西装外套气质修身",
+    "price": 159,
+    "image": "https://example.com/2.jpg",
+    "category": "外套"
+  },
+  {
+    "title": "基础款纯色T恤百搭",
+    "price": 39,
+    "image": "https://example.com/3.jpg",
+    "category": "上衣"
+  },
+  {
+    "title": "日系宽松衬衫慵懒风",
+    "price": 79,
+    "image": "https://example.com/4.jpg",
+    "category": "上衣"
+  },
+  {
+    "title": "韩版针织开衫秋冬新款",
+    "price": 119,
+    "image": "https://example.com/5.jpg",
+    "category": "外套"
+  }
+]
