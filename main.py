@@ -60,8 +60,19 @@ def build_risk_note(item):
     return "；".join(risks) + "。"
 
 
+def image_block(item):
+    """在 Markdown 报告里显示图片。真实图片链接可显示，测试链接会显示为占位/失效图。"""
+    image_url = item.get("image", "")
+    title = item.get("title", "商品图片")
+
+    if not image_url:
+        return "> 暂无商品图片。"
+
+    return f'<img src="{image_url}" alt="{title}" width="260">'
+
+
 def generate_markdown_report(items):
-    """生成给人看的 Markdown 选款报告。"""
+    """生成给人看的 Markdown 图片选款报告。"""
     lines = []
     lines.append("# HermitCreate 每日选款评分报告")
     lines.append("")
@@ -71,6 +82,8 @@ def generate_markdown_report(items):
     lines.append("")
     lines.append("本报告根据 HermitCreate 当前的测试商品库和多维度评分模型自动生成。")
     lines.append("评分不是判断某个风格天然更好，而是判断每个款式在自己所属风格赛道里是否具备开发价值。")
+    lines.append("")
+    lines.append("> 注意：当前 products.json 里的图片多为测试链接。等你把 image 字段换成真实商品图链接后，报告里会自动显示真实图片。")
     lines.append("")
     lines.append("当前主要参考维度：")
     lines.append("")
@@ -86,12 +99,13 @@ def generate_markdown_report(items):
     lines.append("")
     lines.append("## 二、Top 选款清单")
     lines.append("")
-    lines.append("| 排名 | 商品ID | 款式 | 风格组 | 类目 | 总分 | 建议 |")
-    lines.append("|---|---|---|---|---|---:|---|")
+    lines.append("| 排名 | 图片 | 商品ID | 款式 | 风格组 | 类目 | 总分 | 建议 |")
+    lines.append("|---|---|---|---|---|---|---:|---|")
 
     for index, item in enumerate(items, start=1):
+        thumb = f'<img src="{item.get("image", "")}" width="80">' if item.get("image") else "暂无图片"
         lines.append(
-            f"| {index} | {item['product_id']} | {item['title']} | {item['style_group']} | "
+            f"| {index} | {thumb} | {item['product_id']} | {item['title']} | {item['style_group']} | "
             f"{item['category']} | {item['total_score']} | {item['recommendation']} |"
         )
 
@@ -104,6 +118,8 @@ def generate_markdown_report(items):
     for index, item in enumerate(items, start=1):
         breakdown = item["score_breakdown"]
         lines.append(f"### {index}. {item['title']}")
+        lines.append("")
+        lines.append(image_block(item))
         lines.append("")
         lines.append(f"- 商品ID：{item['product_id']}")
         lines.append(f"- 风格组：{item['style_group']}")
@@ -181,4 +197,4 @@ print("✔ HermitCreate 选款评分完成")
 print("输出数量:", len(top_100))
 print("最高分:", top_100[0]["total_score"] if top_100 else 0)
 print("结果文件: output.json")
-print("可读报告: report.md")
+print("图片报告: report.md")
