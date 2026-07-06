@@ -17,14 +17,32 @@ def _price_cost_score(price):
     return 8
 
 
+# ========== 2.0 新增：风格趋势映射 ==========
+STYLE_TREND_MAP = {
+    "streetwear_us": ["oversize", "graphic", "washed", "cargo", "hoodie", "boxy"],
+    "deconstruction": ["deconstruction", "asymmetric", "patchwork", "raw edge", "irregular", "解构", "拼接", "不规则"],
+    "commuter_basic": ["plain", "basic", "essential", "clean", "shirt", "tee", "通勤", "基础"],
+    "utility_workwear": ["utility", "workwear", "cargo", "pocket", "carpenter", "工装", "多口袋"],
+    "vintage_washed": ["vintage", "washed", "distressed", "faded", "复古", "水洗", "做旧"]
+}
+
+
+def _trend_score(t, style_group):
+    """根据风格组做轻量趋势匹配，不改变原有评分体系，只做加权补充。"""
+    if not style_group:
+        return 0
+
+    keywords = STYLE_TREND_MAP.get(style_group, [])
+    return _keyword_score(t, keywords, points_per_hit=2, max_score=8)
+
+
 def score_breakdown(product):
     """
-    HermitCreate 多维度选款评分模型 V2。
+    HermitCreate 多维度选款评分模型 V2 → V2.1
 
-    核心原则：
-    - 风格之间没有天然高低之分。
-    - 每个款式是在自己所属风格里，依据外观、细节、实用性、成本、历史市场反馈等维度综合评分。
-    - 目前MVP阶段使用标题/价格/测试字段模拟判断；后续可以接入真实销量、点击率、收藏率、退货率、加购率等数据。
+    upgrade:
+    - 增加 trend_score（风格趋势匹配度）
+    - 保持原有评分结构稳定
     """
     title = product.get("title", "")
     t = title.lower()
@@ -32,7 +50,7 @@ def score_breakdown(product):
     category = product.get("category", "")
     style_group = product.get("style_group", "")
 
-    # 1. 外观风格识别度：这个款是否有明确的视觉风格，而不是模糊款
+    # 1. 外观风格识别度
     appearance_keywords = [
         "oversize", "boxy", "washed", "vintage", "distressed", "acid wash",
         "cargo", "utility", "deconstruction", "deconstructed", "asymmetric",
@@ -43,7 +61,7 @@ def score_breakdown(product):
     ]
     appearance_score = _keyword_score(t, appearance_keywords, points_per_hit=4, max_score=22)
 
-    # 2. 细节设计：有没有可被消费者感知的卖点细节
+    # 2. 细节设计
     detail_keywords = [
         "double zip", "zip", "pocket", "multi pocket", "double knee", "carpenter",
         "rib", "waffle", "heavyweight", "premium", "mesh", "nylon", "shell",
@@ -53,7 +71,7 @@ def score_breakdown(product):
     ]
     detail_score = _keyword_score(t, detail_keywords, points_per_hit=4, max_score=18)
 
-    # 3. 实用性/搭配性：是否适合日常穿、复购、做基础盘
+    # 3. 实用性
     utility_keywords = [
         "basic", "plain", "essential", "clean", "minimal", "easy care", "relaxed",
         "straight", "tee", "long sleeve", "shirt", "chinos", "cardigan", "polo",
@@ -61,20 +79,16 @@ def score_breakdown(product):
     ]
     utility_score = _keyword_score(t, utility_keywords, points_per_hit=4, max_score=20)
 
-    # 4. 开发成本/可落地性：先用价格模拟，后续可替换为供应商报价、面料难度、打样周期、起订量
+    # 4. 成本
     cost_score = _price_cost_score(price)
 
-    # 5. 历史市场销量情况：MVP允许产品数据里手动填 market_sales_score；没有则用中性分
-    market_sales_score = product.get("market_sales_score", 12)
-    market_sales_score = max(0, min(market_sales_score, 20))
+    # 5. 市场数据
+    market_sales_score = max(0, min(product.get("market_sales_score", 12), 20))
+    style_feedback_score = max(0, min(product.get("style_feedback_score", 10), 15))
+    similar_reaction_score = max(0, min(product.get("similar_reaction_score", 5), 10))
 
-    # 6. 历史风格市场反馈：MVP允许产品数据里手动填 style_feedback_score；没有则用中性分
-    style_feedback_score = product.get("style_feedback_score", 10)
-    style_feedback_score = max(0, min(style_feedback_score, 15))
-
-    # 7. 类似款市场反应：MVP允许产品数据里手动填 similar_reaction_score；没有则用中性分
-    similar_reaction_score = product.get("similar_reaction_score", 5)
-    similar_reaction_score = max(0, min(similar_reaction_score, 10))
+    # 6. 2.0新增：趋势匹配
+    trend_score = _trend_score(t, style_group)
 
     total = (
         appearance_score
@@ -84,6 +98,7 @@ def score_breakdown(product):
         + market_sales_score
         + style_feedback_score
         + similar_reaction_score
+        + trend_score
     )
 
     return {
@@ -97,9 +112,9 @@ def score_breakdown(product):
         "market_sales_score": market_sales_score,
         "style_feedback_score": style_feedback_score,
         "similar_reaction_score": similar_reaction_score,
+        "trend_score": trend_score,
     }
 
 
 def score(product):
-    """保持 main.py 兼容：返回最终总分。"""
     return score_breakdown(product)["total"]
