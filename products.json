@@ -4,6 +4,7 @@
     "price": 129,
     "image": "https://example.com/hermitcreate-001.jpg",
     "category": "卫衣",
+    "style_group": "美式街头",
     "source": "test"
   },
   {
@@ -11,6 +12,7 @@
     "price": 189,
     "image": "https://example.com/hermitcreate-002.jpg",
     "category": "外套",
+    "style_group": "美式复古",
     "source": "test"
   },
   {
@@ -18,6 +20,7 @@
     "price": 149,
     "image": "https://example.com/hermitcreate-003.jpg",
     "category": "裤装",
+    "style_group": "美式工装",
     "source": "test"
   },
   {
@@ -25,6 +28,7 @@
     "price": 69,
     "image": "https://example.com/hermitcreate-004.jpg",
     "category": "T恤",
+    "style_group": "美式街头",
     "source": "test"
   },
   {
@@ -32,6 +36,7 @@
     "price": 49,
     "image": "https://example.com/hermitcreate-005.jpg",
     "category": "T恤",
+    "style_group": "口粮基础款",
     "source": "test"
   },
   {
@@ -39,6 +44,7 @@
     "price": 59,
     "image": "https://example.com/hermitcreate-006.jpg",
     "category": "长袖T恤",
+    "style_group": "口粮基础款",
     "source": "test"
   },
   {
@@ -46,6 +52,7 @@
     "price": 99,
     "image": "https://example.com/hermitcreate-007.jpg",
     "category": "衬衫",
+    "style_group": "舒适通勤",
     "source": "test"
   },
   {
@@ -53,6 +60,7 @@
     "price": 119,
     "image": "https://example.com/hermitcreate-008.jpg",
     "category": "裤装",
+    "style_group": "舒适通勤",
     "source": "test"
   },
   {
@@ -60,6 +68,7 @@
     "price": 219,
     "image": "https://example.com/hermitcreate-009.jpg",
     "category": "外套",
+    "style_group": "解构剪裁",
     "source": "test"
   },
   {
@@ -67,6 +76,7 @@
     "price": 139,
     "image": "https://example.com/hermitcreate-010.jpg",
     "category": "衬衫",
+    "style_group": "解构剪裁",
     "source": "test"
   },
   {
@@ -74,6 +84,7 @@
     "price": 109,
     "image": "https://example.com/hermitcreate-011.jpg",
     "category": "卫衣",
+    "style_group": "美式廓形",
     "source": "test"
   },
   {
@@ -81,6 +92,7 @@
     "price": 89,
     "image": "https://example.com/hermitcreate-012.jpg",
     "category": "短裤",
+    "style_group": "美式工装",
     "source": "test"
   },
   {
@@ -88,6 +100,7 @@
     "price": 159,
     "image": "https://example.com/hermitcreate-013.jpg",
     "category": "牛仔裤",
+    "style_group": "滑板街头",
     "source": "test"
   },
   {
@@ -95,6 +108,7 @@
     "price": 169,
     "image": "https://example.com/hermitcreate-014.jpg",
     "category": "卫衣",
+    "style_group": "废土做旧",
     "source": "test"
   },
   {
@@ -102,6 +116,7 @@
     "price": 39,
     "image": "https://example.com/hermitcreate-015.jpg",
     "category": "背心",
+    "style_group": "口粮基础款",
     "source": "test"
   },
   {
@@ -109,6 +124,7 @@
     "price": 99,
     "image": "https://example.com/hermitcreate-016.jpg",
     "category": "裤装",
+    "style_group": "休闲运动",
     "source": "test"
   },
   {
@@ -116,6 +132,7 @@
     "price": 119,
     "image": "https://example.com/hermitcreate-017.jpg",
     "category": "针织衫",
+    "style_group": "舒适基础款",
     "source": "test"
   },
   {
@@ -123,6 +140,7 @@
     "price": 129,
     "image": "https://example.com/hermitcreate-018.jpg",
     "category": "马甲",
+    "style_group": "机能工装",
     "source": "test"
   },
   {
@@ -130,6 +148,7 @@
     "price": 89,
     "image": "https://example.com/hermitcreate-019.jpg",
     "category": "衬衫",
+    "style_group": "美式基础款",
     "source": "test"
   },
   {
@@ -137,6 +156,247 @@
     "price": 129,
     "image": "https://example.com/hermitcreate-020.jpg",
     "category": "牛仔裤",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "american retro baseball jacket 美式复古棒球夹克",
+    "price": 199,
+    "image": "https://example.com/hermitcreate-021.jpg",
+    "category": "外套",
+    "style_group": "美式复古",
+    "source": "test"
+  },
+  {
+    "title": "varsity jacket college street 学院风拼色棒球服",
+    "price": 179,
+    "image": "https://example.com/hermitcreate-022.jpg",
+    "category": "外套",
+    "style_group": "美式学院街头",
+    "source": "test"
+  },
+  {
+    "title": "double knee carpenter pants 美式木匠工装裤",
+    "price": 159,
+    "image": "https://example.com/hermitcreate-023.jpg",
+    "category": "裤装",
+    "style_group": "美式工装",
+    "source": "test"
+  },
+  {
+    "title": "utility nylon shell jacket 机能尼龙防风夹克",
+    "price": 169,
+    "image": "https://example.com/hermitcreate-024.jpg",
+    "category": "外套",
+    "style_group": "机能街头",
+    "source": "test"
+  },
+  {
+    "title": "parachute pants loose fit 伞兵裤宽松街头长裤",
+    "price": 139,
+    "image": "https://example.com/hermitcreate-025.jpg",
+    "category": "裤装",
+    "style_group": "机能街头",
+    "source": "test"
+  },
+  {
+    "title": "distressed raw edge tee 破坏毛边做旧短袖",
+    "price": 79,
+    "image": "https://example.com/hermitcreate-026.jpg",
+    "category": "T恤",
+    "style_group": "废土做旧",
+    "source": "test"
+  },
+  {
+    "title": "sun faded sweatshirt 日晒褪色圆领卫衣",
+    "price": 119,
+    "image": "https://example.com/hermitcreate-027.jpg",
+    "category": "卫衣",
+    "style_group": "复古做旧",
+    "source": "test"
+  },
+  {
+    "title": "acid wash loose jeans 酸洗宽松直筒牛仔裤",
+    "price": 169,
+    "image": "https://example.com/hermitcreate-028.jpg",
+    "category": "牛仔裤",
+    "style_group": "复古做旧",
+    "source": "test"
+  },
+  {
+    "title": "deconstructed panel pants 解构分割线设计长裤",
+    "price": 159,
+    "image": "https://example.com/hermitcreate-029.jpg",
+    "category": "裤装",
+    "style_group": "解构剪裁",
+    "source": "test"
+  },
+  {
+    "title": "asymmetric hem long sleeve 不对称下摆长袖T恤",
+    "price": 89,
+    "image": "https://example.com/hermitcreate-030.jpg",
+    "category": "长袖T恤",
+    "style_group": "解构基础款",
+    "source": "test"
+  },
+  {
+    "title": "layered fake two piece tee 假两件层次感短袖",
+    "price": 79,
+    "image": "https://example.com/hermitcreate-031.jpg",
+    "category": "T恤",
+    "style_group": "层次解构",
+    "source": "test"
+  },
+  {
+    "title": "panel cut hoodie 分割剪裁连帽卫衣",
+    "price": 149,
+    "image": "https://example.com/hermitcreate-032.jpg",
+    "category": "卫衣",
+    "style_group": "解构剪裁",
+    "source": "test"
+  },
+  {
+    "title": "relaxed office tee 舒适通勤纯色圆领短袖",
+    "price": 59,
+    "image": "https://example.com/hermitcreate-033.jpg",
+    "category": "T恤",
+    "style_group": "舒适通勤",
+    "source": "test"
+  },
+  {
+    "title": "easy care oxford shirt 免烫基础牛津纺衬衫",
+    "price": 109,
+    "image": "https://example.com/hermitcreate-034.jpg",
+    "category": "衬衫",
+    "style_group": "舒适通勤",
+    "source": "test"
+  },
+  {
+    "title": "relaxed straight chinos 舒适直筒休闲通勤裤",
+    "price": 119,
+    "image": "https://example.com/hermitcreate-035.jpg",
+    "category": "裤装",
+    "style_group": "舒适通勤",
+    "source": "test"
+  },
+  {
+    "title": "soft knit polo 舒适基础针织POLO衫",
+    "price": 99,
+    "image": "https://example.com/hermitcreate-036.jpg",
+    "category": "POLO衫",
+    "style_group": "舒适基础款",
+    "source": "test"
+  },
+  {
+    "title": "premium heavyweight tee 高克重口粮短袖T恤",
+    "price": 69,
+    "image": "https://example.com/hermitcreate-037.jpg",
+    "category": "T恤",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "boxy cropped tee 短宽版型基础T恤",
+    "price": 59,
+    "image": "https://example.com/hermitcreate-038.jpg",
+    "category": "T恤",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "wide rib tank 宽螺纹百搭背心",
+    "price": 45,
+    "image": "https://example.com/hermitcreate-039.jpg",
+    "category": "背心",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "straight sweatpants 基础百搭直筒卫裤",
+    "price": 89,
+    "image": "https://example.com/hermitcreate-040.jpg",
+    "category": "裤装",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "clean zip hoodie 基础百搭拉链连帽卫衣",
+    "price": 119,
+    "image": "https://example.com/hermitcreate-041.jpg",
+    "category": "卫衣",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "heavy flannel shirt 美式复古格纹法兰绒衬衫",
+    "price": 129,
+    "image": "https://example.com/hermitcreate-042.jpg",
+    "category": "衬衫",
+    "style_group": "美式复古",
+    "source": "test"
+  },
+  {
+    "title": "rugby stripe polo 美式橄榄球条纹POLO",
+    "price": 109,
+    "image": "https://example.com/hermitcreate-043.jpg",
+    "category": "POLO衫",
+    "style_group": "美式学院街头",
+    "source": "test"
+  },
+  {
+    "title": "mesh football jersey 美式运动网眼球衣",
+    "price": 79,
+    "image": "https://example.com/hermitcreate-044.jpg",
+    "category": "球衣",
+    "style_group": "美式运动街头",
+    "source": "test"
+  },
+  {
+    "title": "racing graphic tee 赛车图案美式短袖",
+    "price": 69,
+    "image": "https://example.com/hermitcreate-045.jpg",
+    "category": "T恤",
+    "style_group": "赛车街头",
+    "source": "test"
+  },
+  {
+    "title": "moto washed jacket 机车水洗短款夹克",
+    "price": 199,
+    "image": "https://example.com/hermitcreate-046.jpg",
+    "category": "外套",
+    "style_group": "机车街头",
+    "source": "test"
+  },
+  {
+    "title": "thermal waffle long sleeve 华夫格基础长袖",
+    "price": 69,
+    "image": "https://example.com/hermitcreate-047.jpg",
+    "category": "长袖T恤",
+    "style_group": "口粮基础款",
+    "source": "test"
+  },
+  {
+    "title": "double zip hoodie 双拉链美式连帽卫衣",
+    "price": 139,
+    "image": "https://example.com/hermitcreate-048.jpg",
+    "category": "卫衣",
+    "style_group": "美式街头",
+    "source": "test"
+  },
+  {
+    "title": "pleated wide trousers 垂感宽松褶皱通勤裤",
+    "price": 139,
+    "image": "https://example.com/hermitcreate-049.jpg",
+    "category": "裤装",
+    "style_group": "舒适通勤",
+    "source": "test"
+  },
+  {
+    "title": "minimal coach jacket 极简通勤教练夹克",
+    "price": 149,
+    "image": "https://example.com/hermitcreate-050.jpg",
+    "category": "外套",
+    "style_group": "舒适通勤",
     "source": "test"
   }
 ]
