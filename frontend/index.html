@@ -11,72 +11,10 @@
         background: #0f0f10;
         color: #fff;
       }
-
-      .layout {
-        display: flex;
-        height: 100vh;
-      }
-
-      .sidebar {
-        width: 260px;
-        background: #141416;
-        padding: 20px;
-      }
-
-      .main {
-        flex: 1;
-        padding: 24px;
-      }
-
-      .card {
-        background: #1c1c1f;
-        border-radius: 12px;
-        padding: 16px;
-        margin-bottom: 12px;
-      }
-
-      .title {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-
-      .btn {
-        padding: 8px 12px;
-        border-radius: 8px;
-        background: #2b2b30;
-        border: none;
-        color: white;
-        cursor: pointer;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-      }
     </style>
   </head>
   <body>
-    <div class="layout">
-      <div class="sidebar">
-        <h2>HermitCreate</h2>
-        <p>AI Product Picker</p>
-        <button class="btn">Top Products</button>
-        <button class="btn">Trend Analysis</button>
-      </div>
-
-      <div class="main">
-        <div class="card">
-          <div class="title">Dashboard</div>
-          <p>AI buy-ready selection system</p>
-        </div>
-
-        <div class="grid">
-          <div class="card">Loading products...</div>
-          <div class="card">Loading trends...</div>
-          <div class="card">Loading insights...</div>
-        </div>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/main.jsx"></script>
   </body>
 </html>
