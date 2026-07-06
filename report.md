@@ -1,11 +1,13 @@
 # HermitCreate 每日选款评分报告
 
-生成时间：2026-07-06 14:41:19
+生成时间：2026-07-06 14:51:43
 
 ## 一、报告说明
 
 本报告根据 HermitCreate 当前的测试商品库和多维度评分模型自动生成。
 评分不是判断某个风格天然更好，而是判断每个款式在自己所属风格赛道里是否具备开发价值。
+
+> 注意：当前 products.json 里的图片多为测试链接。等你把 image 字段换成真实商品图链接后，报告里会自动显示真实图片。
 
 当前主要参考维度：
 
@@ -21,34 +23,36 @@
 
 ## 二、Top 选款清单
 
-| 排名 | 商品ID | 款式 | 风格组 | 类目 | 总分 | 建议 |
-|---|---|---|---|---|---:|---|
-| 1 | HC-020 | essential straight jeans 口粮百搭直筒牛仔裤 | 口粮基础款 | 牛仔裤 | 84 | 建议开发 |
-| 2 | HC-005 | basic plain tee 纯色重磅基础款短袖 | 口粮基础款 | T恤 | 83 | 建议开发 |
-| 3 | HC-008 | minimal loose trousers 舒适通勤宽松直筒西裤 | 舒适通勤 | 裤装 | 82 | 建议开发 |
-| 4 | HC-006 | essential long sleeve tee 口粮百搭长袖T恤 | 口粮基础款 | 长袖T恤 | 75 | 建议开发 |
-| 5 | HC-003 | cargo pants 工装多口袋直筒长裤 | 美式工装 | 裤装 | 74 | 可小批量测试 |
-| 6 | HC-019 | oversize striped shirt 美式宽松条纹衬衫 | 美式基础款 | 衬衫 | 73 | 可小批量测试 |
-| 7 | HC-007 | clean workwear shirt 舒适通勤基础款衬衫 | 舒适通勤 | 衬衫 | 72 | 可小批量测试 |
-| 8 | HC-010 | deconstructed patchwork shirt 解构拼接设计感衬衫 | 解构剪裁 | 衬衫 | 72 | 可小批量测试 |
-| 9 | HC-001 | oversize washed hoodie 美式做旧连帽卫衣 | 美式街头 | 卫衣 | 71 | 可小批量测试 |
-| 10 | HC-002 | vintage washed denim jacket 美式复古水洗牛仔夹克 | 美式复古 | 外套 | 71 | 可小批量测试 |
-| 11 | HC-011 | boxy fit sweatshirt 美式宽松廓形圆领卫衣 | 美式廓形 | 卫衣 | 71 | 可小批量测试 |
-| 12 | HC-018 | workwear utility vest 多口袋机能工装马甲 | 机能工装 | 马甲 | 68 | 可小批量测试 |
-| 13 | HC-012 | washed cargo shorts 做旧工装五分短裤 | 美式工装 | 短裤 | 66 | 可小批量测试 |
-| 14 | HC-017 | clean basic cardigan 舒适基础款针织开衫 | 舒适基础款 | 针织衫 | 66 | 可小批量测试 |
-| 15 | HC-009 | deconstruction asymmetric jacket 解构剪裁不规则夹克 | 解构剪裁 | 外套 | 65 | 可小批量测试 |
-| 16 | HC-014 | grunge washed zip hoodie 废土感做旧拉链卫衣 | 废土做旧 | 卫衣 | 64 | 暂缓开发 |
-| 17 | HC-004 | streetwear graphic tee 美式街头印花短袖T恤 | 美式街头 | T恤 | 63 | 暂缓开发 |
-| 18 | HC-013 | skater loose jeans 滑板风宽松牛仔裤 | 滑板街头 | 牛仔裤 | 61 | 暂缓开发 |
-| 19 | HC-015 | plain heavy cotton tank 百搭重磅纯色背心 | 口粮基础款 | 背心 | 61 | 暂缓开发 |
-| 20 | HC-016 | casual jogger pants 休闲运动束脚裤 | 休闲运动 | 裤装 | 50 | 暂缓开发 |
+| 排名 | 图片 | 商品ID | 款式 | 风格组 | 类目 | 总分 | 建议 |
+|---|---|---|---|---|---|---:|---|
+| 1 | <img src="https://example.com/hermitcreate-020.jpg" width="80"> | HC-020 | essential straight jeans 口粮百搭直筒牛仔裤 | 口粮基础款 | 牛仔裤 | 84 | 建议开发 |
+| 2 | <img src="https://example.com/hermitcreate-005.jpg" width="80"> | HC-005 | basic plain tee 纯色重磅基础款短袖 | 口粮基础款 | T恤 | 83 | 建议开发 |
+| 3 | <img src="https://example.com/hermitcreate-008.jpg" width="80"> | HC-008 | minimal loose trousers 舒适通勤宽松直筒西裤 | 舒适通勤 | 裤装 | 82 | 建议开发 |
+| 4 | <img src="https://example.com/hermitcreate-006.jpg" width="80"> | HC-006 | essential long sleeve tee 口粮百搭长袖T恤 | 口粮基础款 | 长袖T恤 | 75 | 建议开发 |
+| 5 | <img src="https://example.com/hermitcreate-003.jpg" width="80"> | HC-003 | cargo pants 工装多口袋直筒长裤 | 美式工装 | 裤装 | 74 | 可小批量测试 |
+| 6 | <img src="https://example.com/hermitcreate-019.jpg" width="80"> | HC-019 | oversize striped shirt 美式宽松条纹衬衫 | 美式基础款 | 衬衫 | 73 | 可小批量测试 |
+| 7 | <img src="https://example.com/hermitcreate-007.jpg" width="80"> | HC-007 | clean workwear shirt 舒适通勤基础款衬衫 | 舒适通勤 | 衬衫 | 72 | 可小批量测试 |
+| 8 | <img src="https://example.com/hermitcreate-010.jpg" width="80"> | HC-010 | deconstructed patchwork shirt 解构拼接设计感衬衫 | 解构剪裁 | 衬衫 | 72 | 可小批量测试 |
+| 9 | <img src="https://example.com/hermitcreate-001.jpg" width="80"> | HC-001 | oversize washed hoodie 美式做旧连帽卫衣 | 美式街头 | 卫衣 | 71 | 可小批量测试 |
+| 10 | <img src="https://example.com/hermitcreate-002.jpg" width="80"> | HC-002 | vintage washed denim jacket 美式复古水洗牛仔夹克 | 美式复古 | 外套 | 71 | 可小批量测试 |
+| 11 | <img src="https://example.com/hermitcreate-011.jpg" width="80"> | HC-011 | boxy fit sweatshirt 美式宽松廓形圆领卫衣 | 美式廓形 | 卫衣 | 71 | 可小批量测试 |
+| 12 | <img src="https://example.com/hermitcreate-018.jpg" width="80"> | HC-018 | workwear utility vest 多口袋机能工装马甲 | 机能工装 | 马甲 | 68 | 可小批量测试 |
+| 13 | <img src="https://example.com/hermitcreate-012.jpg" width="80"> | HC-012 | washed cargo shorts 做旧工装五分短裤 | 美式工装 | 短裤 | 66 | 可小批量测试 |
+| 14 | <img src="https://example.com/hermitcreate-017.jpg" width="80"> | HC-017 | clean basic cardigan 舒适基础款针织开衫 | 舒适基础款 | 针织衫 | 66 | 可小批量测试 |
+| 15 | <img src="https://example.com/hermitcreate-009.jpg" width="80"> | HC-009 | deconstruction asymmetric jacket 解构剪裁不规则夹克 | 解构剪裁 | 外套 | 65 | 可小批量测试 |
+| 16 | <img src="https://example.com/hermitcreate-014.jpg" width="80"> | HC-014 | grunge washed zip hoodie 废土感做旧拉链卫衣 | 废土做旧 | 卫衣 | 64 | 暂缓开发 |
+| 17 | <img src="https://example.com/hermitcreate-004.jpg" width="80"> | HC-004 | streetwear graphic tee 美式街头印花短袖T恤 | 美式街头 | T恤 | 63 | 暂缓开发 |
+| 18 | <img src="https://example.com/hermitcreate-013.jpg" width="80"> | HC-013 | skater loose jeans 滑板风宽松牛仔裤 | 滑板街头 | 牛仔裤 | 61 | 暂缓开发 |
+| 19 | <img src="https://example.com/hermitcreate-015.jpg" width="80"> | HC-015 | plain heavy cotton tank 百搭重磅纯色背心 | 口粮基础款 | 背心 | 61 | 暂缓开发 |
+| 20 | <img src="https://example.com/hermitcreate-016.jpg" width="80"> | HC-016 | casual jogger pants 休闲运动束脚裤 | 休闲运动 | 裤装 | 50 | 暂缓开发 |
 
 ---
 
 ## 三、详细分析
 
 ### 1. essential straight jeans 口粮百搭直筒牛仔裤
+
+<img src="https://example.com/hermitcreate-020.jpg" alt="essential straight jeans 口粮百搭直筒牛仔裤" width="260">
 
 - 商品ID：HC-020
 - 风格组：口粮基础款
@@ -73,6 +77,8 @@
 
 ### 2. basic plain tee 纯色重磅基础款短袖
 
+<img src="https://example.com/hermitcreate-005.jpg" alt="basic plain tee 纯色重磅基础款短袖" width="260">
+
 - 商品ID：HC-005
 - 风格组：口粮基础款
 - 类目：T恤
@@ -95,6 +101,8 @@
 ---
 
 ### 3. minimal loose trousers 舒适通勤宽松直筒西裤
+
+<img src="https://example.com/hermitcreate-008.jpg" alt="minimal loose trousers 舒适通勤宽松直筒西裤" width="260">
 
 - 商品ID：HC-008
 - 风格组：舒适通勤
@@ -119,6 +127,8 @@
 
 ### 4. essential long sleeve tee 口粮百搭长袖T恤
 
+<img src="https://example.com/hermitcreate-006.jpg" alt="essential long sleeve tee 口粮百搭长袖T恤" width="260">
+
 - 商品ID：HC-006
 - 风格组：口粮基础款
 - 类目：长袖T恤
@@ -141,6 +151,8 @@
 ---
 
 ### 5. cargo pants 工装多口袋直筒长裤
+
+<img src="https://example.com/hermitcreate-003.jpg" alt="cargo pants 工装多口袋直筒长裤" width="260">
 
 - 商品ID：HC-003
 - 风格组：美式工装
@@ -165,6 +177,8 @@
 
 ### 6. oversize striped shirt 美式宽松条纹衬衫
 
+<img src="https://example.com/hermitcreate-019.jpg" alt="oversize striped shirt 美式宽松条纹衬衫" width="260">
+
 - 商品ID：HC-019
 - 风格组：美式基础款
 - 类目：衬衫
@@ -187,6 +201,8 @@
 ---
 
 ### 7. clean workwear shirt 舒适通勤基础款衬衫
+
+<img src="https://example.com/hermitcreate-007.jpg" alt="clean workwear shirt 舒适通勤基础款衬衫" width="260">
 
 - 商品ID：HC-007
 - 风格组：舒适通勤
@@ -211,6 +227,8 @@
 
 ### 8. deconstructed patchwork shirt 解构拼接设计感衬衫
 
+<img src="https://example.com/hermitcreate-010.jpg" alt="deconstructed patchwork shirt 解构拼接设计感衬衫" width="260">
+
 - 商品ID：HC-010
 - 风格组：解构剪裁
 - 类目：衬衫
@@ -233,6 +251,8 @@
 ---
 
 ### 9. oversize washed hoodie 美式做旧连帽卫衣
+
+<img src="https://example.com/hermitcreate-001.jpg" alt="oversize washed hoodie 美式做旧连帽卫衣" width="260">
 
 - 商品ID：HC-001
 - 风格组：美式街头
@@ -257,6 +277,8 @@
 
 ### 10. vintage washed denim jacket 美式复古水洗牛仔夹克
 
+<img src="https://example.com/hermitcreate-002.jpg" alt="vintage washed denim jacket 美式复古水洗牛仔夹克" width="260">
+
 - 商品ID：HC-002
 - 风格组：美式复古
 - 类目：外套
@@ -279,6 +301,8 @@
 ---
 
 ### 11. boxy fit sweatshirt 美式宽松廓形圆领卫衣
+
+<img src="https://example.com/hermitcreate-011.jpg" alt="boxy fit sweatshirt 美式宽松廓形圆领卫衣" width="260">
 
 - 商品ID：HC-011
 - 风格组：美式廓形
@@ -303,6 +327,8 @@
 
 ### 12. workwear utility vest 多口袋机能工装马甲
 
+<img src="https://example.com/hermitcreate-018.jpg" alt="workwear utility vest 多口袋机能工装马甲" width="260">
+
 - 商品ID：HC-018
 - 风格组：机能工装
 - 类目：马甲
@@ -325,6 +351,8 @@
 ---
 
 ### 13. washed cargo shorts 做旧工装五分短裤
+
+<img src="https://example.com/hermitcreate-012.jpg" alt="washed cargo shorts 做旧工装五分短裤" width="260">
 
 - 商品ID：HC-012
 - 风格组：美式工装
@@ -349,6 +377,8 @@
 
 ### 14. clean basic cardigan 舒适基础款针织开衫
 
+<img src="https://example.com/hermitcreate-017.jpg" alt="clean basic cardigan 舒适基础款针织开衫" width="260">
+
 - 商品ID：HC-017
 - 风格组：舒适基础款
 - 类目：针织衫
@@ -371,6 +401,8 @@
 ---
 
 ### 15. deconstruction asymmetric jacket 解构剪裁不规则夹克
+
+<img src="https://example.com/hermitcreate-009.jpg" alt="deconstruction asymmetric jacket 解构剪裁不规则夹克" width="260">
 
 - 商品ID：HC-009
 - 风格组：解构剪裁
@@ -395,6 +427,8 @@
 
 ### 16. grunge washed zip hoodie 废土感做旧拉链卫衣
 
+<img src="https://example.com/hermitcreate-014.jpg" alt="grunge washed zip hoodie 废土感做旧拉链卫衣" width="260">
+
 - 商品ID：HC-014
 - 风格组：废土做旧
 - 类目：卫衣
@@ -417,6 +451,8 @@
 ---
 
 ### 17. streetwear graphic tee 美式街头印花短袖T恤
+
+<img src="https://example.com/hermitcreate-004.jpg" alt="streetwear graphic tee 美式街头印花短袖T恤" width="260">
 
 - 商品ID：HC-004
 - 风格组：美式街头
@@ -441,6 +477,8 @@
 
 ### 18. skater loose jeans 滑板风宽松牛仔裤
 
+<img src="https://example.com/hermitcreate-013.jpg" alt="skater loose jeans 滑板风宽松牛仔裤" width="260">
+
 - 商品ID：HC-013
 - 风格组：滑板街头
 - 类目：牛仔裤
@@ -464,6 +502,8 @@
 
 ### 19. plain heavy cotton tank 百搭重磅纯色背心
 
+<img src="https://example.com/hermitcreate-015.jpg" alt="plain heavy cotton tank 百搭重磅纯色背心" width="260">
+
 - 商品ID：HC-015
 - 风格组：口粮基础款
 - 类目：背心
@@ -486,6 +526,8 @@
 ---
 
 ### 20. casual jogger pants 休闲运动束脚裤
+
+<img src="https://example.com/hermitcreate-016.jpg" alt="casual jogger pants 休闲运动束脚裤" width="260">
 
 - 商品ID：HC-016
 - 风格组：休闲运动
