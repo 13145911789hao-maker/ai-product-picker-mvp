@@ -1,32 +1,142 @@
 [
   {
-    "title": "韩系宽松连衣裙2026新款",
-    "price": 89,
-    "image": "https://example.com/1.jpg",
-    "category": "女装"
+    "title": "oversize washed hoodie 美式做旧连帽卫衣",
+    "price": 129,
+    "image": "https://example.com/hermitcreate-001.jpg",
+    "category": "卫衣",
+    "source": "test"
   },
   {
-    "title": "通勤西装外套气质修身",
-    "price": 159,
-    "image": "https://example.com/2.jpg",
-    "category": "外套"
+    "title": "vintage washed denim jacket 美式复古水洗牛仔夹克",
+    "price": 189,
+    "image": "https://example.com/hermitcreate-002.jpg",
+    "category": "外套",
+    "source": "test"
   },
   {
-    "title": "基础款纯色T恤百搭",
-    "price": 39,
-    "image": "https://example.com/3.jpg",
-    "category": "上衣"
+    "title": "cargo pants 工装多口袋直筒长裤",
+    "price": 149,
+    "image": "https://example.com/hermitcreate-003.jpg",
+    "category": "裤装",
+    "source": "test"
   },
   {
-    "title": "日系宽松衬衫慵懒风",
-    "price": 79,
-    "image": "https://example.com/4.jpg",
-    "category": "上衣"
+    "title": "streetwear graphic tee 美式街头印花短袖T恤",
+    "price": 69,
+    "image": "https://example.com/hermitcreate-004.jpg",
+    "category": "T恤",
+    "source": "test"
   },
   {
-    "title": "韩版针织开衫秋冬新款",
+    "title": "basic plain tee 纯色重磅基础款短袖",
+    "price": 49,
+    "image": "https://example.com/hermitcreate-005.jpg",
+    "category": "T恤",
+    "source": "test"
+  },
+  {
+    "title": "essential long sleeve tee 口粮百搭长袖T恤",
+    "price": 59,
+    "image": "https://example.com/hermitcreate-006.jpg",
+    "category": "长袖T恤",
+    "source": "test"
+  },
+  {
+    "title": "clean workwear shirt 舒适通勤基础款衬衫",
+    "price": 99,
+    "image": "https://example.com/hermitcreate-007.jpg",
+    "category": "衬衫",
+    "source": "test"
+  },
+  {
+    "title": "minimal loose trousers 舒适通勤宽松直筒西裤",
     "price": 119,
-    "image": "https://example.com/5.jpg",
-    "category": "外套"
+    "image": "https://example.com/hermitcreate-008.jpg",
+    "category": "裤装",
+    "source": "test"
+  },
+  {
+    "title": "deconstruction asymmetric jacket 解构剪裁不规则夹克",
+    "price": 219,
+    "image": "https://example.com/hermitcreate-009.jpg",
+    "category": "外套",
+    "source": "test"
+  },
+  {
+    "title": "deconstructed patchwork shirt 解构拼接设计感衬衫",
+    "price": 139,
+    "image": "https://example.com/hermitcreate-010.jpg",
+    "category": "衬衫",
+    "source": "test"
+  },
+  {
+    "title": "boxy fit sweatshirt 美式宽松廓形圆领卫衣",
+    "price": 109,
+    "image": "https://example.com/hermitcreate-011.jpg",
+    "category": "卫衣",
+    "source": "test"
+  },
+  {
+    "title": "washed cargo shorts 做旧工装五分短裤",
+    "price": 89,
+    "image": "https://example.com/hermitcreate-012.jpg",
+    "category": "短裤",
+    "source": "test"
+  },
+  {
+    "title": "skater loose jeans 滑板风宽松牛仔裤",
+    "price": 159,
+    "image": "https://example.com/hermitcreate-013.jpg",
+    "category": "牛仔裤",
+    "source": "test"
+  },
+  {
+    "title": "grunge washed zip hoodie 废土感做旧拉链卫衣",
+    "price": 169,
+    "image": "https://example.com/hermitcreate-014.jpg",
+    "category": "卫衣",
+    "source": "test"
+  },
+  {
+    "title": "plain heavy cotton tank 百搭重磅纯色背心",
+    "price": 39,
+    "image": "https://example.com/hermitcreate-015.jpg",
+    "category": "背心",
+    "source": "test"
+  },
+  {
+    "title": "casual jogger pants 休闲运动束脚裤",
+    "price": 99,
+    "image": "https://example.com/hermitcreate-016.jpg",
+    "category": "裤装",
+    "source": "test"
+  },
+  {
+    "title": "clean basic cardigan 舒适基础款针织开衫",
+    "price": 119,
+    "image": "https://example.com/hermitcreate-017.jpg",
+    "category": "针织衫",
+    "source": "test"
+  },
+  {
+    "title": "workwear utility vest 多口袋机能工装马甲",
+    "price": 129,
+    "image": "https://example.com/hermitcreate-018.jpg",
+    "category": "马甲",
+    "source": "test"
+  },
+  {
+    "title": "oversize striped shirt 美式宽松条纹衬衫",
+    "price": 89,
+    "image": "https://example.com/hermitcreate-019.jpg",
+    "category": "衬衫",
+    "source": "test"
+  },
+  {
+    "title": "essential straight jeans 口粮百搭直筒牛仔裤",
+    "price": 129,
+    "image": "https://example.com/hermitcreate-020.jpg",
+    "category": "牛仔裤",
+    "source": "test"
   }
 ]
